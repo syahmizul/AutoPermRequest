@@ -3,6 +3,7 @@ import * as cordova from 'cordova';
 class AutoPermRequest
 {
     public LOG_TAG : string = "AutoPermRequest";
+
     private OnNativeSuccessResponse(data:any):any
     {
         let FormattedLog = `[${this.LOG_TAG}] Received success response from native.`;
@@ -17,7 +18,7 @@ class AutoPermRequest
         console.dir(data);
     }
 
-    private ForceRequestAllPermissions():void
+    public ForceRequestAllPermissions():void
     {
         cordova.exec(this.OnNativeSuccessResponse, this.OnNativeErrorResponse, "AutoPermRequest", "ForceRequestAllPermissions");
     }

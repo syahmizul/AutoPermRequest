@@ -18,6 +18,7 @@
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="AutoPermRequest">
                 <param name="android-package" value="com.syahmizul.AutoPermRequest" />
+		        <param name="onload" value="true" />
             </feature>
         </config-file>
         <source-file src="native_source/android/AutoPermRequest.java" target-dir="src/com/syahmizul/AutoPermRequest"/>
@@ -27,6 +28,7 @@
         <config-file parent="/*" target="config.xml">
             <feature name="AutoPermRequest">
                 <param name="ios-package" value="AutoPermRequest" />
+		        <param name="onload" value="true" />
             </feature>
         </config-file>
         <source-file src="native_source/ios/AutoPermRequest.m" />
