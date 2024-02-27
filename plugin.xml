@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<plugin
+    id="AutoPermRequest"
+    version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <name>AutoPermRequest</name>
+    <description>A Cordova plugin to automatically request for permissions on native platforms such as Android and iOS using the permissions listed in their manifest file.</description>
+    <author>Syahmi Zulkalnain</author>
+    <keywords>ionic,angular,framework,permission,auto,android,ios</keywords>
+    <license>LGPL-3.0-or-later</license>
+    <js-module name="AutoPermRequest" src="www/AutoPermRequest.js">
+        <clobbers target="AutoPermRequest"/>
+    </js-module>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="AutoPermRequest">
+                <param name="android-package" value="com.syahmizul.AutoPermRequest" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/AutoPermRequest.java" target-dir="src/com/syahmizul/AutoPermRequest"/>
+
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="AutoPermRequest">
+                <param name="ios-package" value="AutoPermRequest" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/AutoPermRequest.m" />
+    </platform>
+</plugin>
