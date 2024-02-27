@@ -1,6 +1,6 @@
 {
-  "name": "autopermrequest",
-  "version": "1.0.0",
+  "name": "@syahmizul/autoperm",
+  "version": "1.0.1",
   "description": "A Cordova plugin to automatically request for permissions on native platforms such as Android and iOS using the permissions listed in their manifest file.",
   "scripts": {
     "build": "tsc"
@@ -12,19 +12,19 @@
   "keywords": [
     "ionic",
     "angular",
-    "javascript",
     "framework",
-    "cordova",
-    "plugin",
-    "automatic",
+    "javascript",
+    "typescript",
     "android",
-    "permission",
     "ios",
-    "iphone",
-    "request"
+    "automatic",
+    "auto",
+    "permissions",
+    "tiramisu",
+    "cordova"
   ],
   "author": "Syahmi Zulkalnain",
-  "license": "LGPL-3.0-or-later",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/syahmizul/AutoPermRequest/issues"
   },
