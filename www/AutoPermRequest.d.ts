@@ -1,7 +1,6 @@
-declare class AutoPermRequest {
+export default class AutoPermRequest {
     LOG_TAG: string;
-    private OnNativeSuccessResponse(data);
-    private OnNativeErrorResponse(data);
-    private ForceRequestAllPermissions();
+    private OnNativeSuccessResponse;
+    private OnNativeErrorResponse;
+    ForceRequestAllPermissions(): void;
 }
-export default AutoPermRequest;

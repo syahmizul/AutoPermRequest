@@ -17,7 +17,7 @@
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="AutoPermRequest">
-                <param name="android-package" value="com.syahmizul.AutoPermRequest" />
+                <param name="android-package" value="com.syahmizul.AutoPermRequest.AutoPermRequest" />
 		        <param name="onload" value="true" />
             </feature>
         </config-file>

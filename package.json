@@ -1,6 +1,6 @@
 {
   "name": "@syahmizul/autoperm",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A Cordova plugin to automatically request for permissions on native platforms such as Android and iOS using the permissions listed in their manifest file.",
   "scripts": {
     "build": "tsc"

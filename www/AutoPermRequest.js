@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const cordova = require("cordova");
 class AutoPermRequest {
     constructor() {
         this.LOG_TAG = "AutoPermRequest";
@@ -16,8 +15,16 @@ class AutoPermRequest {
         console.dir(data);
     }
     ForceRequestAllPermissions() {
-        cordova.exec(this.OnNativeSuccessResponse, this.OnNativeErrorResponse, "AutoPermRequest", "ForceRequestAllPermissions");
+        try {
+            cordova.exec(this.OnNativeSuccessResponse, this.OnNativeErrorResponse, "AutoPermRequest", "ForceRequestAllPermissions");
+        }
+        catch (error) {
+            let CastedError = error;
+            let FormattedLog = `[${this.LOG_TAG}] Exception occurred : ${CastedError.message}`;
+            console.log(FormattedLog);
+        }
     }
 }
 exports.default = AutoPermRequest;
+;
 //# sourceMappingURL=AutoPermRequest.js.map
